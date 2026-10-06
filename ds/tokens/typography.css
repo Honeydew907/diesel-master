@@ -1,0 +1,36 @@
+:root{
+--font-sans:'Hanken Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif;
+--font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+
+--fs-display:clamp(48px,7vw,96px); /* @kind font */
+--fs-h1:clamp(40px,5vw,64px); /* @kind font */
+--fs-h2:clamp(32px,3.6vw,48px); /* @kind font */
+--fs-h3:28px; /* @kind font */
+--fs-h4:20px; /* @kind font */
+--fs-lead:20px; /* @kind font */
+--fs-body:16px; /* @kind font */
+--fs-small:14px; /* @kind font */
+--fs-eyebrow:12px; /* @kind font */
+--fs-micro:11px; /* @kind font */
+
+--lh-tight:1.02; /* @kind font */
+--lh-heading:1.08; /* @kind font */
+--lh-snug:1.3; /* @kind font */
+--lh-body:1.55; /* @kind font */
+
+--tracking-display:-0.035em; /* @kind font */
+--tracking-heading:-0.025em; /* @kind font */
+--tracking-body:-0.005em; /* @kind font */
+--tracking-eyebrow:0.08em; /* @kind font */
+--tracking-button:0.06em; /* @kind font */
+
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+
+/* Semantic */
+--type-heading-family:var(--font-sans); /* @kind font */
+--type-heading-weight:var(--fw-medium); /* @kind font */
+--type-body-family:var(--font-sans); /* @kind font */
+--type-label-family:var(--font-mono); /* @kind font */
+}

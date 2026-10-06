@@ -1,0 +1,44 @@
+:root{
+/* Base — paper & ink */
+--paper-0:#FFFFFF;
+--paper-1:#F5F4F0;
+--paper-2:#ECEAE4;
+--paper-3:#DFDCD4;
+--ink-1:#111111;
+--ink-2:#1B1B1A;
+--ink-3:#2A2A28;
+--ink-4:#3A3A37;
+--grey-1:#5E5D59;
+--grey-2:#8A8984;
+--grey-3:#B4B2AC;
+/* Accent — brake-light red */
+--red-1:#D92B1C;
+--red-2:#B82214;
+--red-3:#F7DCD8;
+/* Semantic (status only, used sparingly) */
+--green-1:#2F7A43;
+--amber-1:#C98A12;
+
+/* Semantic aliases */
+--surface-page:var(--paper-1);
+--surface-card:var(--paper-0);
+--surface-muted:var(--paper-2);
+--surface-inverse:var(--ink-1);
+--surface-inverse-card:var(--ink-3);
+--text-strong:var(--ink-1);
+--text-body:var(--ink-4);
+--text-muted:var(--grey-1);
+--text-subtle:var(--grey-2);
+--text-inverse:var(--paper-1);
+--text-inverse-muted:var(--grey-3);
+--text-accent:var(--red-1);
+--border-hairline:var(--paper-3);
+--border-strong:var(--ink-1);
+--border-inverse:rgba(245,244,240,.16);
+--accent:var(--red-1);
+--accent-hover:var(--red-2);
+--accent-tint:var(--red-3);
+--scrim-hero:linear-gradient(180deg,rgba(17,17,17,.55) 0%,rgba(17,17,17,0) 30%,rgba(17,17,17,0) 55%,rgba(17,17,17,.7) 100%); /* @kind color */
+--glass-dark:rgba(17,17,17,.42);
+--glass-light:rgba(255,255,255,.14);
+}

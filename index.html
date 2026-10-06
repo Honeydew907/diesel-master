@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diesel Master Inc. — Reliable Truck &amp; Auto Repair</title>
+<meta name="description" content="Truck and auto repair, New York State inspections, brakes and diagnostics in Freeport, Long Island.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diesel Master Inc.">
+<meta property="og:title" content="Diesel Master Inc. — Reliable Truck &amp; Auto Repair">
+<meta property="og:description" content="Truck and auto repair, New York State inspections, brakes and diagnostics in Freeport, Long Island.">
+<meta property="og:url" content="https://honeydew907.github.io/diesel-master/">
+<meta property="og:image" content="https://honeydew907.github.io/diesel-master/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Diesel Master Inc. website: Reliable Truck &amp; Auto Repair over a close-up of an engine">
+<meta name="twitter:card" content="summary_large_image">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Diesel Master Inc. — Reliable Truck &amp; Auto Repair</title>
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <script src="ds/bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <link rel="preload" as="image" href="assets/hero-engine.webp">
+  <style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--surface-page);color:var(--text-strong);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}a{color:inherit}a:hover{color:var(--red-1)}
+  ::selection{background:var(--red-1);color:#fff}
+  :focus{outline:none}
+  :focus-visible{outline:2px solid var(--red-1);outline-offset:3px;border-radius:var(--radius-pill)}
+  #services :focus-visible,footer :focus-visible{outline-color:var(--paper-0)}
+  #services button[aria-expanded]:focus-visible{border-radius:var(--radius-xs);outline-offset:4px}
+  :root{--frame-max:1600px;--frame-inset:max(12px, calc((100% - var(--frame-max)) / 2 + 12px))} /* panels stop growing past this width and center */
+  section[id]{scroll-margin-top:100px}
+  section#top{scroll-margin-top:0}
+  image-slot::part(ring){display:none} /* placeholder outline is editor chrome; photos are always filled here */
+  a[href^="tel:"]{font-variant-numeric:tabular-nums}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important}}
+
+  /* ── Motion: one idea — photos open like a roll-up bay door ── */
+  @keyframes dm-door{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
+  @keyframes dm-settle{from{transform:scale(1.12)}to{transform:none}}
+  @keyframes dm-rise{from{transform:translateY(110%)}to{transform:none}}
+  @keyframes dm-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes dm-fade{from{opacity:0}to{opacity:1}}
+  @keyframes dm-lamp{from{transform:scale(1);opacity:.55}to{transform:scale(3.2);opacity:0}}
+  /* hero, on load: door opens, headline rises word by word, then copy + info bar */
+  [data-hero-photo]{animation:dm-door 1.1s cubic-bezier(.76,0,.24,1) .1s both}
+  [data-hero-photo]>image-slot{animation:dm-settle 1.8s cubic-bezier(.16,1,.3,1) .1s both}
+  [data-w]{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+  [data-w]>span{display:inline-block}
+  #top [data-w]>span{animation:dm-rise .9s cubic-bezier(.16,1,.3,1) both}
+  [data-rise]{animation:dm-up .8s cubic-bezier(.16,1,.3,1) both}
+  [data-fade]{animation:dm-fade .6s ease-out .3s both}
+  [data-lamp]{position:relative}
+  [data-lamp]::after{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:dm-lamp 1.4s cubic-bezier(.16,1,.3,1) 1.4s 2 both}
+  /* About + Services photos: same door, once, when scrolled into view (JS adds .dm-motion) */
+  html.dm-motion [data-door]{clip-path:inset(100% 0 0 0 round var(--radius-md));transition:clip-path 1.1s cubic-bezier(.76,0,.24,1)}
+  html.dm-motion [data-door]>image-slot{transform:scale(1.12);transition:transform 1.8s cubic-bezier(.16,1,.3,1)}
+  html.dm-motion [data-door][data-in]{clip-path:inset(0 round var(--radius-md))}
+  html.dm-motion [data-door][data-in]>image-slot{transform:none}
+  html.dm-motion [data-heading] [data-w]>span{transform:translateY(110%);transition:transform .9s cubic-bezier(.16,1,.3,1)}
+  html.dm-motion [data-heading][data-in] [data-w]>span{transform:none}
+  @media (max-width:960px){html.dm-motion [data-heading] [data-w]>span{transition-duration:.7s}} /* phones: a touch quicker */
+  /* extra reviews after "Show all" */
+  [data-stack]>:nth-child(n+3){animation:dm-up .6s cubic-bezier(.16,1,.3,1) both}
+  [data-stack]>:nth-child(4){animation-delay:.08s}
+  /* reduced motion: no movement, gentle fades only */
+  @media (prefers-reduced-motion:reduce){
+    [data-hero-photo]{animation:dm-fade .6s ease-out both!important}
+    [data-hero-photo]>image-slot,[data-w]>span,[data-lamp]::after{animation:none!important}
+    [data-rise],[data-fade],[data-stack]>:nth-child(n+3){animation:dm-fade .5s ease-out both!important}
+    html.dm-motion [data-door],html.dm-motion [data-door][data-in]{clip-path:none;opacity:0;transition:opacity .6s ease-out!important}
+    html.dm-motion [data-door][data-in]{opacity:1}
+    html.dm-motion [data-door]>image-slot,html.dm-motion [data-heading] [data-w]>span{transform:none!important}
+  }</style>
+</helmet>
+
+<main style="background:var(--surface-page);padding-bottom:12px">
+
+<!-- Site nav: transparent over the hero, an inset ink panel once you scroll -->
+<sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+  <header data-fade style="position:fixed;z-index:50;top:12px;left:var(--frame-inset);right:var(--frame-inset);align-items:center;border-radius:{{ navRadius }};background:{{ navBg }};backdrop-filter:{{ navBlur }};-webkit-backdrop-filter:{{ navBlur }};border-bottom:1px solid {{ navLine }};box-shadow:{{ navShadow }};transition:background var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base);height:76px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:24px;padding:0 clamp(20px,3vw,32px)">
+    <a href="#top" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:18px;letter-spacing:-.02em;color:#fff;text-decoration:none;white-space:nowrap;border-radius:4px" style-hover="color:#fff"><span style="width:9px;height:9px;background:var(--red-1);border-radius:2px;flex:none"></span>Diesel Master Inc.</a>
+    <nav aria-label="Main" style="display:flex;gap:28px">
+      <sc-for list="{{ links }}" as="l" hint-placeholder-count="4">
+        <a href="{{ l.href }}" aria-current="{{ l.current }}" style="padding:6px 0;font-size:14px;font-weight:500;color:{{ l.color }};text-decoration:none;border-radius:0;background:linear-gradient(var(--red-1),var(--red-1)) left bottom / {{ l.line }} 1.5px no-repeat;transition:background-size var(--dur-base) var(--ease-out), color var(--dur-fast)" style-hover="color:#fff;background-size:100% 1.5px">{{ l.label }}</a>
+      </sc-for>
+    </nav>
+    <div style="justify-self:end">
+      <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="light" icon="phone" href="tel:6315550142" hint-size="190px,48px">631-555-0142</x-import>
+    </div>
+  </header>
+</sc-if>
+
+<sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+  <header data-fade style="position:fixed;z-index:50;top:12px;left:var(--frame-inset);right:var(--frame-inset);align-items:center;border-radius:{{ navRadius }};background:{{ navBg }};backdrop-filter:{{ navBlur }};-webkit-backdrop-filter:{{ navBlur }};border-bottom:1px solid {{ navLine }};box-shadow:{{ navShadow }};transition:background var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base);height:64px;display:flex;justify-content:space-between;gap:16px;padding:0 10px 0 20px">
+    <a href="#top" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:17px;letter-spacing:-.02em;color:#fff;text-decoration:none;white-space:nowrap;border-radius:4px" style-hover="color:#fff"><span style="width:9px;height:9px;background:var(--red-1);border-radius:2px;flex:none"></span>Diesel Master Inc.</a>
+    <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-controls="mobile-menu" style="height:44px;display:inline-flex;align-items:center;gap:12px;padding:0 16px 0 18px;border-radius:999px;background:rgba(255,255,255,.1);backdrop-filter:blur(var(--blur-glass));-webkit-backdrop-filter:blur(var(--blur-glass));border:1px solid rgba(255,255,255,.22);color:#fff;font-family:var(--font-sans);font-size:12px;font-weight:500;letter-spacing:var(--tracking-button);text-transform:uppercase;cursor:pointer">
+      <span>{{ menuLabel }}</span>
+      <span aria-hidden="true" style="position:relative;width:16px;height:10px;flex:none">
+        <span style="position:absolute;left:0;right:0;top:0;height:1.5px;border-radius:2px;background:currentColor;transform:{{ bar1 }};transition:transform var(--dur-base) var(--ease-out)"></span>
+        <span style="position:absolute;left:0;right:0;top:8.5px;height:1.5px;border-radius:2px;background:currentColor;transform:{{ bar2 }};transition:transform var(--dur-base) var(--ease-out)"></span>
+      </span>
+    </button>
+  </header>
+  <div id="mobile-menu" aria-hidden="{{ menuHidden }}" style="position:fixed;z-index:49;top:84px;left:12px;right:12px;padding:8px 20px 20px;border-radius:var(--radius-md);background:rgba(17,17,17,.96);backdrop-filter:blur(var(--blur-glass));-webkit-backdrop-filter:blur(var(--blur-glass));border:1px solid var(--border-inverse);box-shadow:var(--shadow-lift);transform-origin:top center;opacity:{{ drawerOpacity }};transform:{{ drawerTransform }};visibility:{{ drawerVisibility }};transition:opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out), visibility var(--dur-base)">
+    <nav aria-label="Main" style="display:flex;flex-direction:column;margin-bottom:20px">
+      <sc-for list="{{ links }}" as="l" hint-placeholder-count="4">
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" aria-current="{{ l.current }}" style="padding:14px 0;border-bottom:1px solid var(--border-inverse);border-radius:0;color:#fff;text-decoration:none;font-size:28px;font-weight:500;letter-spacing:-.025em;opacity:{{ drawerOpacity }};transform:{{ l.drawerShift }};transition:opacity var(--dur-slow) var(--ease-out) {{ l.delay }}, transform var(--dur-slow) var(--ease-out) {{ l.delay }}" style-hover="color:#fff">{{ l.label }}</a>
+      </sc-for>
+    </nav>
+    <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="light" icon="phone" href="tel:6315550142" dc-props="{{ drawerBtnProps }}" hint-size="100%,48px">631-555-0142</x-import>
+  </div>
+</sc-if>
+
+<section id="top" data-screen-label="Hero" style="max-width:var(--frame-max);margin:0 auto;padding:12px">
+  <div style="position:relative;min-height:{{ heroHeight }};border-radius:var(--radius-lg);overflow:hidden;clip-path:inset(0 round var(--radius-lg));isolation:isolate;color:#fff;display:flex;flex-direction:column;background:var(--ink-2)">
+    <div data-hero-photo style="position:absolute;inset:0">
+      <image-slot id="hero-photo" shape="rect" placeholder="Photo · shop exterior / truck in the bay" src="assets/hero-engine.webp"></image-slot>
+    </div>
+    <div style="position:absolute;inset:0;background:var(--scrim-hero);pointer-events:none"></div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:rgba(17,17,17,{{ heroVeil }})"></div>
+    <div style="position:absolute;inset:0;pointer-events:none;opacity:.85;background:linear-gradient(180deg, rgba(17,17,17,.7) 0%, rgba(17,17,17,0) 22%), linear-gradient(90deg, rgba(17,17,17,.75) 0%, rgba(17,17,17,.35) 50%, rgba(17,17,17,0) 80%), linear-gradient(0deg, rgba(17,17,17,.8) 0%, rgba(17,17,17,0) 55%)"></div>
+
+    <div aria-hidden="true" style="height:{{ navSpacer }};flex:none"></div>
+
+    <div style="position:relative;z-index:1;margin-top:auto;padding:clamp(56px,8vw,96px) clamp(20px,3vw,32px) clamp(28px,3vw,40px);pointer-events:none">
+      <div style="display:grid;grid-template-columns:{{ heroCols }};align-items:end;gap:{{ heroGap }}">
+        <h1 style="margin:0;max-width:7.5em;font-weight:500;font-size:var(--fs-display);line-height:var(--lh-tight);letter-spacing:var(--tracking-display);text-wrap:balance"><span data-w><span style="animation-delay:.45s">Reliable</span></span> <span data-w><span style="animation-delay:.51s">Truck</span></span> <span data-w><span style="animation-delay:.57s">&amp;</span></span> <span data-w><span style="animation-delay:.63s">Auto</span></span> <span data-w><span style="animation-delay:.69s">Repair</span></span></h1>
+        <div data-rise style="animation-delay:.75s;display:flex;flex-direction:column;align-items:flex-start;gap:24px;max-width:440px;padding-bottom:{{ heroCopyNudge }}">
+          <p style="margin:0;font-size:18px;line-height:1.5;color:rgba(255,255,255,.86);text-wrap:pretty">Diesel Master Inc. provides expert auto repair services and certified inspections to keep your vehicle in peak condition and road-ready.</p>
+          <div style="pointer-events:auto">
+            <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="{{ heroCtaVariant }}" href="#services" hint-size="200px,48px">SHOP SERVICES</x-import>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <div data-rise aria-label="Location and hours" role="group" style="animation-delay:.95s;position:relative;z-index:1;display:flex;align-items:flex-end;gap:clamp(20px,2.5vw,40px);padding:20px clamp(20px,3vw,32px) 24px;border-top:1px solid rgba(255,255,255,.14)">
+        <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:rgba(255,255,255,.62)">Today</span>
+          <span style="font-size:15px;line-height:1.45;color:#fff;display:inline-flex;align-items:center;gap:10px;white-space:nowrap"><span data-lamp style="width:8px;height:8px;border-radius:50%;flex:none;background:{{ status.dot }}"></span>{{ status.label }}</span>
+          <span style="font-size:15px;line-height:1.45;color:rgba(255,255,255,.62);white-space:nowrap">{{ status.detail }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;min-width:0;padding-left:clamp(20px,2.5vw,40px);border-left:1px solid rgba(255,255,255,.14)">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:rgba(255,255,255,.62)">Location</span>
+          <span style="font-size:15px;line-height:1.45;color:#fff">789 S Ocean Ave<br>Freeport, NY 11520</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;min-width:0;padding-left:clamp(20px,2.5vw,40px);border-left:1px solid rgba(255,255,255,.14)">
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:rgba(255,255,255,.62)">Hours</span>
+          <span style="font-size:15px;line-height:1.45;color:#fff;display:grid;grid-template-columns:auto auto;column-gap:16px;font-variant-numeric:tabular-nums;white-space:nowrap">
+            <span style="color:rgba(255,255,255,.62)">Mon – Fri</span><span>8 AM – 6 PM</span>
+            <span style="color:rgba(255,255,255,.62)">Sat – Sun</span><span>8 AM – 3 PM</span>
+          </span>
+        </div>
+        <a href="{{ mapsHref }}" target="_blank" rel="noopener noreferrer" style="margin-left:auto;margin-bottom:2px;display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:4px;border-radius:0;transition:border-color var(--dur-fast)" style-hover="color:#fff;border-color:var(--red-1)">GET DIRECTIONS <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Icon" name="arrow-up-right" size="{{ 14 }}" hint-size="14px,14px"></x-import></a>
+      </div>
+    </sc-if>
+    <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+      <div data-rise aria-label="Location and hours" role="group" style="animation-delay:.95s;position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px 20px;border-top:1px solid rgba(255,255,255,.14)">
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+          <span style="font-size:15px;line-height:1.45;color:#fff;display:flex;align-items:center;gap:10px;white-space:nowrap"><span data-lamp style="width:8px;height:8px;border-radius:50%;flex:none;background:{{ status.dot }}"></span><span>{{ status.label }}<span style="color:rgba(255,255,255,.62)"> · {{ status.short }}</span></span></span>
+          <span style="font-size:14px;line-height:1.4;color:rgba(255,255,255,.62)">789 S Ocean Ave, Freeport</span>
+        </div>
+        <div style="display:flex;gap:8px;flex:none">
+          <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.IconButton" variant="glass" icon="phone" label="Call 631-555-0142" href="tel:6315550142" size="{{ 44 }}" hint-size="44px,44px"></x-import>
+          <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.IconButton" variant="light" icon="navigation" label="Get directions" href="{{ mapsHref }}" size="{{ 44 }}" hint-size="44px,44px"></x-import>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+
+<section id="about" data-screen-label="About" style="max-width:var(--container-max);margin:0 auto;padding:var(--section-y) var(--gutter)">
+  <div style="display:grid;grid-template-columns:{{ aboutCols }};grid-template-areas:{{ aboutAreas }};grid-template-rows:auto 1fr;gap:{{ aboutGap }};padding-top:24px;border-top:1px solid var(--border-hairline)">
+    <div style="grid-area:head;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+      <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Eyebrow" hint-size="220px,20px">WHY DIESEL MASTER INC?</x-import>
+      <h2 data-heading style="margin:8px 0 0;font-weight:500;font-size:var(--fs-h1);line-height:var(--lh-heading);letter-spacing:var(--tracking-heading);text-wrap:balance"><span data-w><span style="transition-delay:0.10s">Expert</span></span> <span data-w><span style="transition-delay:0.16s">Care</span></span> <span data-w><span style="transition-delay:0.22s">For</span></span> <span data-w><span style="transition-delay:0.28s">Every</span></span> <span data-w><span style="transition-delay:0.34s">Vehicle</span></span></h2>
+      <p style="margin:0;max-width:34em;font-size:var(--fs-lead);line-height:1.5;color:var(--text-body);text-wrap:pretty">Diesel Master Inc. is a one-man operation led by John Polak, who brings over 50 years of hands-on experience in auto repair.</p>
+    </div>
+    <div data-door style="grid-area:photo;align-self:start;aspect-ratio:{{ aboutRatio }};border-radius:var(--radius-md);overflow:hidden;background:var(--ink-3)">
+      <image-slot id="about-bay" shape="rect" placeholder="Photo · John at work" src="assets/about-hands.webp"></image-slot>
+    </div>
+    <div style="grid-area:quote;align-self:end;display:flex;flex-direction:column;align-items:flex-start;gap:32px">
+      <figure style="margin:0;padding-top:28px;border-top:1px solid var(--border-hairline);display:flex;flex-direction:column;gap:20px">
+        <blockquote style="margin:0;max-width:24em;font-size:clamp(22px,2.2vw,28px);font-weight:500;line-height:1.32;letter-spacing:-0.015em;color:var(--text-strong);text-wrap:pretty">“I’m dedicated to providing top-quality service and certified inspections with professionalism you can trust—keeping your car, van, or even 16-wheeler running at its best.”</blockquote>
+        <figcaption style="display:inline-flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:var(--fs-micro);letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--text-muted)"><span style="width:16px;height:1px;background:var(--red-1)"></span>John Polak</figcaption>
+      </figure>
+      <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="dark" href="#services" hint-size="200px,48px">VIEW SERVICES</x-import>
+    </div>
+  </div>
+</section>
+
+<section id="services" data-screen-label="Services" style="width:calc(100% - 24px);max-width:calc(var(--frame-max) - 24px);margin:0 auto;background:var(--ink-1);color:var(--text-inverse);border-radius:var(--radius-lg);padding:var(--section-y) var(--gutter)">
+  <div style="max-width:calc(var(--container-max) - 2 * var(--gutter));margin:0 auto">
+    <div style="padding-top:24px;border-top:1px solid var(--border-inverse)">
+      <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Eyebrow" tone="inverse" hint-size="120px,20px">SERVICES</x-import>
+      <div style="display:grid;grid-template-columns:{{ servicesHeadCols }};align-items:end;gap:24px clamp(40px,6vw,96px);margin-top:32px">
+        <h2 data-heading style="margin:0;max-width:9em;font-weight:500;font-size:var(--fs-h1);line-height:var(--lh-heading);letter-spacing:var(--tracking-heading);text-wrap:balance"><span data-w><span style="transition-delay:0.10s">Reliable</span></span> <span data-w><span style="transition-delay:0.16s">Repairs</span></span> <span data-w><span style="transition-delay:0.22s">for</span></span> <span data-w><span style="transition-delay:0.28s">Every</span></span> <span data-w><span style="transition-delay:0.34s">Ride</span></span></h2>
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;padding-bottom:6px">
+          <p style="margin:0;max-width:30em;font-size:var(--fs-lead);line-height:1.5;color:var(--text-inverse-muted);text-wrap:pretty">Let's break down what you can expect when you bring your vehicle to Diesel Master Inc.</p>
+          <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="light" href="#visit" hint-size="200px,48px">VISIT THE SHOP</x-import>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:{{ servicesCols }};align-items:start;gap:32px clamp(40px,6vw,96px);margin-top:clamp(40px,5vw,64px)">
+      <div data-door style="position:relative;aspect-ratio:{{ servicesPhotoRatio }};border-radius:var(--radius-md);overflow:hidden;background:var(--ink-3)">
+        <image-slot id="services-photo" shape="rect" placeholder="Photo · oil change in the bay" src="assets/services-oil.webp"></image-slot>
+        <!-- Same scrim as the hero photo: darkened top and bottom -->
+        <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(17,17,17,.35) 0%, rgba(17,17,17,0) 18%), linear-gradient(0deg, rgba(17,17,17,.45) 0%, rgba(17,17,17,0) 35%)"></div>
+      </div>
+      <div style="min-width:0;border-bottom:1px solid var(--border-inverse)">
+        <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
+          <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.ServiceRow" tone="inverse" index="{{ s.index }}" title="{{ s.title }}" description="{{ s.description }}" open="{{ s.open }}" on-toggle="{{ s.onToggle }}" hint-size="100%,88px"></x-import>
+        </sc-for>
+      </div>
+    </div>
+    <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+      <div style="margin-top:32px">
+        <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="light" href="#visit" hint-size="200px,48px">VISIT THE SHOP</x-import>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+<section id="reviews" data-screen-label="Reviews" style="max-width:var(--container-max);margin:0 auto;padding:var(--section-y) var(--gutter)">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:24px;border-top:1px solid var(--border-hairline);margin-bottom:{{ reviewsHeadGap }}">
+    <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Eyebrow" hint-size="120px,20px">REVIEWS</x-import>
+    <sc-if value="{{ reviewSlider }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;gap:8px">
+        <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.IconButton" variant="outline" icon="chevron-left" label="Previous review" disabled="{{ atStart }}" on-click="{{ prevReview }}" hint-size="44px,44px"></x-import>
+        <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.IconButton" variant="dark" icon="chevron-right" label="Next review" disabled="{{ atEnd }}" on-click="{{ nextReview }}" hint-size="44px,44px"></x-import>
+      </div>
+    </sc-if>
+  </div>
+
+  <sc-if value="{{ reviewSlider }}" hint-placeholder-val="{{ true }}">
+    <div ref="{{ trackRef }}" onScroll="{{ onTrackScroll }}" tabindex="0" role="region" aria-label="Customer reviews" style="border-radius:var(--radius-md);display:grid;grid-auto-flow:column;grid-auto-columns:{{ reviewCol }};gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3">
+        <div style="scroll-snap-align:start;display:flex">
+          <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.ReviewCard" quote="{{ r.quote }}" name="{{ r.name }}" vehicle="{{ r.vehicle }}" dc-props="{{ reviewCardProps }}" style="width:100%;height:100%" hint-size="100%,260px"></x-import>
+        </div>
+      </sc-for>
+    </div>
+    <div style="height:2px;background:var(--border-hairline);margin-top:28px;border-radius:2px;overflow:hidden">
+      <div style="height:100%;width:100%;background:var(--ink-1);transform-origin:left center;transition:transform var(--dur-base) var(--ease-out);transform:scaleX({{ progress }})"></div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ reviewStack }}" hint-placeholder-val="{{ false }}">
+    <div data-stack ref="{{ stackRef }}" role="list" aria-label="Customer reviews" style="display:flex;flex-direction:column;gap:12px">
+      <sc-for list="{{ stackedReviews }}" as="r" hint-placeholder-count="2">
+        <div role="listitem" tabindex="-1" style="border-radius:var(--radius-md)">
+          <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.ReviewCard" quote="{{ r.quote }}" name="{{ r.name }}" vehicle="{{ r.vehicle }}" dc-props="{{ stackCardProps }}" hint-size="100%,220px"></x-import>
+        </div>
+      </sc-for>
+    </div>
+    <sc-if value="{{ showMoreReviews }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:16px">
+        <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="outline" arrow="{{ false }}" on-click="{{ expandReviews }}" dc-props="{{ showAllProps }}" hint-size="100%,48px">{{ showAllLabel }}</x-import>
+      </div>
+    </sc-if>
+  </sc-if>
+</section>
+
+<section id="visit" data-screen-label="Visit the Shop" style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter) var(--section-y)">
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(32px,6vw,96px);padding-top:24px;border-top:1px solid var(--border-hairline)">
+    <div style="flex:1 1 380px;display:flex;flex-direction:column;align-items:flex-start;gap:28px">
+      <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Eyebrow" hint-size="160px,20px">VISIT THE SHOP</x-import>
+      <h2 style="margin:0;font-weight:500;font-size:var(--fs-h1);line-height:var(--lh-heading);letter-spacing:var(--tracking-heading);text-wrap:balance">Stop By For An Inspection</h2>
+      <p style="margin:0;max-width:640px;font-size:var(--fs-lead);line-height:1.45;color:var(--text-body);text-wrap:pretty">Located on South Ocean Avenue in Freeport, Long Island. We are ready to handle everything from routine maintenance to complex diagnostics.</p>
+      <div style="align-self:stretch">
+        <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.DetailList" items="{{ visitDetails }}" hint-size="100%,220px"></x-import>
+      </div>
+      <x-import component-from-global-scope="DieselMasterDesignSystem_ef1472.Button" variant="accent" href="{{ mapsHref }}" target="_blank" rel="noopener noreferrer" hint-size="200px,48px">GET DIRECTIONS</x-import>
+    </div>
+    <div style="flex:1 1 380px;min-height:460px;border-radius:var(--radius-lg);overflow:hidden;background:var(--ink-3);border:1px solid var(--border-hairline)">
+      <iframe title="Map · S Ocean Ave, Freeport, NY" src="https://maps.google.com/maps?q=S+Ocean+Ave,+Freeport,+NY+11520&amp;z=15&amp;output=embed" loading="lazy" style="display:block;width:100%;height:100%;min-height:460px;border:0;filter:{{ mapFilter }}"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer data-screen-label="Footer" style="width:calc(100% - 24px);max-width:calc(var(--frame-max) - 24px);margin:0 auto;padding:clamp(32px,4vw,48px) var(--gutter);background:var(--ink-1);color:var(--text-inverse);border-radius:var(--radius-lg)">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px 32px;padding-bottom:clamp(32px,4vw,48px);border-bottom:1px solid var(--border-inverse)">
+    <a href="#top" style="display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:clamp(20px,2vw,26px);letter-spacing:-.025em;color:#fff;text-decoration:none">
+      <span style="width:10px;height:10px;background:var(--red-1);border-radius:2px;flex:none"></span>Diesel Master Inc.
+    </a>
+    <nav style="display:flex;gap:28px;flex-wrap:wrap">
+      <sc-for list="{{ links }}" as="l" hint-placeholder-count="4">
+        <a href="{{ l.href }}" style="padding:12px 0;margin:-12px 0;color:var(--text-inverse);text-decoration:none;font-size:15px" style-hover="color:var(--red-1)">{{ l.label }}</a>
+      </sc-for>
+    </nav>
+  </div>
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-inverse-muted)">
+    <span>© 2026 DIESEL MASTER INC.</span>
+    <div style="display:flex;gap:24px">
+      <a href="privacy.html" style="padding:14px 0;margin:-14px 0;color:var(--text-inverse-muted);text-decoration:none" style-hover="color:var(--text-inverse)">Privacy Policy</a>
+      <a href="terms.html" style="padding:14px 0;margin:-14px 0;color:var(--text-inverse-muted);text-decoration:none" style-hover="color:var(--text-inverse)">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroCta&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;light&quot;,&quot;accent&quot;],&quot;default&quot;:&quot;light&quot;,&quot;tsType&quot;:&quot;'light'|'accent'&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;firstServiceOpen&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Services&quot;},&quot;mapStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Monochrome&quot;,&quot;Color&quot;],&quot;default&quot;:&quot;Monochrome&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Visit&quot;}}">
+const SERVICES = [
+  ['NY INSPECTIONS', 'Stay road-legal and safe with certified New York State inspections performed quickly and professionally.'],
+  ['OIL CHANGE', "Keep your engine running smoothly with quick and clean oil changes that protect and extend your vehicle's life."],
+  ['BRAKE REPAIRS', 'Ensure maximum stopping power with expert brake inspections, repairs, and replacements for a safer ride.'],
+  ['ADVANCED DIAGNOSTICS', 'Identify issues fast with state-of-the-art diagnostic tools that pinpoint problems before they become costly repairs.'],
+];
+const REVIEWS = [
+  ['Fast, friendly, and honest! John got my car back on the road in no time. Highly recommend!', 'KALIF JONES', 'OWNER, 2004 BUICK LESABRE'],
+  ["Brought my F-250 in for a check engine light two other shops couldn't figure out. John found the problem in under an hour and charged me a fair price.", 'MARCUS DELANEY', 'OWNER, 2017 FORD F-250'],
+  ['Got my NY inspection done while I waited. In and out, no upselling, just straight answers. This is my shop from now on.', 'DANA RUIZ', 'OWNER, 2019 HONDA ACCORD'],
+  ['John has kept my work van on the road for years. Brakes, oil, diagnostics, he does it all and he does it right.', 'TONY CARUSO', 'OWNER, 2014 CHEVROLET EXPRESS'],
+];
+const MAPS_HREF = 'https://maps.google.com/?q=S+Ocean+Ave,+Freeport,+NY+11520';
+// Open/closed in the shop's own time zone: Mon–Fri 8–6, Sat–Sun 8–3.
+function shopStatus(now = new Date()) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(now).map(p => [p.type, p.value]));
+  const weekend = parts.weekday === 'Sat' || parts.weekday === 'Sun';
+  const mins = (Number(parts.hour) % 24) * 60 + Number(parts.minute);
+  const close = weekend ? 15 * 60 : 18 * 60;
+  const closeLabel = weekend ? '3 PM' : '6 PM';
+  if (mins >= 480 && mins < close) return { open: true, label: 'Open now', detail: 'Until ' + closeLabel, short: 'until ' + closeLabel, dot: '#4FC26B' };
+  const when = mins < 480 ? '8 AM' : '8 AM tomorrow';
+  return { open: false, label: 'Closed', detail: 'Opens ' + when, short: 'opens 8 AM', dot: 'var(--red-1)' };
+}
+const PHONE_REVIEW_ORDER = [1, 3, 2, 0]; // Marcus, Tony, then Dana, Kalif
+const SECTION_IDS = ['about', 'services', 'reviews', 'visit']; // same order as LINKS
+const LINKS = [['About', '#about'], ['Services', '#services'], ['Reviews', '#reviews'], ['Directions', '#visit']];
+
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1440, menu: false, open: null, pos: 0, status: shopStatus(), allReviews: false, scrolled: false, active: -1 };
+  stackRef = React.createRef();
+  trackRef = React.createRef();
+  componentDidMount() {
+    this.onResize = () => this.setState({ w: window.innerWidth });
+    window.addEventListener('resize', this.onResize);
+    this.onKey = e => { if (e.key === 'Escape' && this.state.menu) this.setState({ menu: false }); };
+    window.addEventListener('keydown', this.onKey);
+    this.clock = setInterval(() => this.setState({ status: shopStatus() }), 60000);
+    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(() => { this.raf = 0; this.syncScroll(); }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.syncScroll();
+    // Photos below the hero open like a bay door the first time they scroll into view.
+    // Without IntersectionObserver the .dm-motion class is never added, so they just show.
+    // We watch each photo's parent: the photo itself starts clipped to nothing, so it never "intersects".
+    // Section headings ([data-heading]) rise the same way. They're watched by their own box and
+    // trigger as soon as they enter the screen, so a fast scroll never lands on an empty heading.
+    if ('IntersectionObserver' in window) {
+      document.documentElement.classList.add('dm-motion');
+      const targets = new Map([...document.querySelectorAll('[data-door]')].map(el => [el.parentElement, el]));
+      const reveal = (entries, io) => entries.forEach(e => {
+        if (e.isIntersecting) { targets.get(e.target).setAttribute('data-in', ''); io.unobserve(e.target); }
+      });
+      this.io = new IntersectionObserver(reveal, { rootMargin: '0px 0px -15% 0px' });
+      this.headIO = new IntersectionObserver(reveal, { rootMargin: '0px 0px -5% 0px' });
+      targets.forEach((el, watch) => this.io.observe(watch));
+      document.querySelectorAll('[data-heading]').forEach(el => { targets.set(el, el); this.headIO.observe(el); });
+    }
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); window.removeEventListener('keydown', this.onKey); window.removeEventListener('scroll', this.onScroll); cancelAnimationFrame(this.raf); clearInterval(this.clock); if (this.io) { this.io.disconnect(); this.headIO.disconnect(); } }
+  // Track which section is in view (for the plate's active marker) and whether we're past the hero.
+  syncScroll() {
+    const hero = document.getElementById('top'); if (!hero) return;
+    const scrolled = window.scrollY > 24;
+    let active = -1, best = -Infinity;
+    SECTION_IDS.forEach((id, i) => {
+      const el = document.getElementById(id); if (!el) return;
+      const top = el.getBoundingClientRect().top;
+      if (top <= 160 && top > best) { best = top; active = i; }
+    });
+    if (scrolled !== this.state.scrolled || active !== this.state.active) this.setState({ scrolled, active });
+  }
+  step(dir) {
+    const el = this.trackRef.current; if (!el || !el.firstElementChild) return;
+    el.scrollBy({ left: dir * (el.firstElementChild.getBoundingClientRect().width + 16), behavior: 'smooth' });
+  }
+  renderVals() {
+    const p = this.props;
+    const wide = this.state.w > 960;
+    const defaultOpen = (p.firstServiceOpen ?? true) ? 0 : -1;
+    const open = this.state.open ?? defaultOpen;
+    const menuOpen = !wide && this.state.menu;
+    const solid = this.state.scrolled || menuOpen;
+    return {
+      wide, narrow: !wide,
+      servicesPhotoRatio: wide ? '1 / 1' : '4 / 3',
+      servicesCols: wide ? 'minmax(0,5fr) minmax(0,7fr)' : 'minmax(0,1fr)',
+      servicesHeadCols: wide ? 'minmax(0,5fr) minmax(0,7fr)' : 'minmax(0,1fr)', // same split as the photo/list row so the intro lines up with the list
+      navSpacer: wide ? '76px' : '64px',
+      navBg: solid ? 'rgba(17,17,17,.9)' : 'rgba(17,17,17,0)',
+      navBlur: solid ? 'blur(var(--blur-glass)) saturate(140%)' : 'none',
+      navRadius: solid ? 'var(--radius-md)' : 'var(--radius-lg) var(--radius-lg) 0 0', // not transitioned: see header transition
+      navLine: solid ? 'transparent' : 'rgba(255,255,255,.14)',
+      navShadow: solid ? 'var(--shadow-lift)' : 'none',
+      menuOpen: menuOpen,
+      menuHidden: !menuOpen,
+      menuLabel: menuOpen ? 'Close' : 'Menu',
+      bar1: menuOpen ? 'translateY(4.25px) rotate(45deg)' : 'none',
+      bar2: menuOpen ? 'translateY(-4.25px) rotate(-45deg)' : 'none',
+      drawerOpacity: menuOpen ? 1 : 0,
+      drawerTransform: menuOpen ? 'none' : 'translateY(-8px) scale(.98)',
+      drawerVisibility: menuOpen ? 'visible' : 'hidden',
+      drawerBtnProps: { style: { width: '100%', justifyContent: 'space-between' } },
+      toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+      closeMenu: () => this.setState({ menu: false }),
+      links: LINKS.map(([label, href], i) => ({
+        label, href,
+        current: this.state.active === i ? 'true' : undefined,
+        line: this.state.scrolled && this.state.active === i ? '100%' : '0%',
+        color: this.state.scrolled && this.state.active === i ? '#fff' : 'rgba(255,255,255,.82)',
+        delay: menuOpen ? (60 + i * 40) + 'ms' : '0ms',
+        drawerShift: menuOpen ? 'none' : 'translateY(-6px)',
+      })),
+      heroCtaVariant: p.heroCta ?? 'light',
+      heroVeil: wide ? 0 : 0.28,
+      heroHeight: wide ? 'clamp(600px, calc(100svh - 24px), 900px)' : 'min(calc(100svh - 24px), 740px)',
+      heroCols: wide ? 'minmax(0,1.5fr) minmax(280px,.62fr)' : 'minmax(0,1fr)',
+      heroGap: wide ? '32px clamp(48px,6vw,96px)' : '24px',
+      heroCopyNudge: wide ? '10px' : '0',
+      aboutRatio: wide ? '1 / 1' : '4 / 3', // source photo is 4:3, so a square keeps most of the frame
+      aboutCols: wide ? 'minmax(0,1fr) minmax(0,1fr)' : 'minmax(0,1fr)',
+      aboutAreas: wide ? '"head photo" "quote photo"' : '"head" "photo" "quote"',
+      aboutGap: wide ? '40px clamp(48px,6vw,96px)' : '32px',
+      status: this.state.status,
+      mapsHref: MAPS_HREF,
+      services: SERVICES.map(([title, description], i) => ({
+        index: i + 1, title, description, open: open === i,
+        onToggle: o => this.setState({ open: o ? i : -1 }),
+      })),
+      reviewCardProps: { style: { height: '100%' } },
+      reviews: REVIEWS.map(([quote, name, vehicle]) => ({ quote, name, vehicle })),
+      reviewSlider: this.state.w > 640,
+      reviewStack: this.state.w <= 640,
+      reviewsHeadGap: this.state.w > 640 ? '32px' : '24px',
+      stackedReviews: PHONE_REVIEW_ORDER.slice(0, this.state.allReviews ? REVIEWS.length : 2).map(i => { const [quote, name, vehicle] = REVIEWS[i]; return { quote, name, vehicle }; }),
+      stackCardProps: { style: { minHeight: 0, gap: 24, padding: 24 } },
+      stackRef: this.stackRef,
+      showMoreReviews: !this.state.allReviews && REVIEWS.length > 2,
+      showAllLabel: 'SHOW ALL ' + REVIEWS.length + ' REVIEWS',
+      showAllProps: { style: { width: '100%', justifyContent: 'center' } },
+      expandReviews: () => this.setState({ allReviews: true }, () => {
+        const next = this.stackRef.current && this.stackRef.current.children[2];
+        if (next) next.focus({ preventScroll: true });
+      }),
+      reviewCol: this.state.w > 960 ? 'calc((100% - 32px) / 3)' : this.state.w > 640 ? 'calc((100% - 16px) / 2)' : '85%',
+      trackRef: this.trackRef,
+      onTrackScroll: () => { const el = this.trackRef.current; if (el) this.setState({ pos: el.scrollLeft / Math.max(1, el.scrollWidth - el.clientWidth) }); },
+      prevReview: () => this.step(-1),
+      nextReview: () => this.step(1),
+      progress: (0.25 + this.state.pos * 0.75).toFixed(4),
+      atStart: this.state.pos < 0.01,
+      atEnd: this.state.pos > 0.99,
+      visitDetails: [
+        { label: 'CONTACT', value: '631-555-0142', href: 'tel:6315550142' },
+        { label: 'LOCATION', value: '789 S Ocean Ave, Freeport, NY 11520' },
+        { label: 'OPENING HOURS', value: 'Mon – Fri: 8 AM – 6 PM\nSat – Sun: 8 AM – 3 PM' },
+      ],
+      mapFilter: (p.mapStyle ?? 'Monochrome') === 'Monochrome' ? 'grayscale(1) contrast(1.05)' : 'none',
+    };
+  }
+}
+</script>
+</body>
+</html>
